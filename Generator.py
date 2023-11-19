@@ -31,3 +31,6 @@ def generate_password(length, chars):
     for j in range(length):
         password += random.choice(chars)
     return password
+
+for _ in range(n):
+    generate_password(length, chars)
