@@ -25,3 +25,9 @@ if add_punctuation.lower() == "да":
 if remove_badsymbols.lower() == "да":
     for c in "il1Lo0O":
         chars = chars.replace(c, "")
+
+def generate_password(length, chars):
+    password = ""
+    for j in range(length):
+        password += random.choice(chars)
+    return password
